@@ -1,5 +1,16 @@
-##This R script to cache the inverse of a matrix
-## 
+##This ia a R script to cache the inverse of a matrix
+## Sample Output
+## > source("cachematrix.R")
+## >  a<-makeCacheMatrix(matrix(5:10,2,2))
+## > a$get()
+##      [,1] [,2]
+##  [1,]    5    7
+##  [2,]    6    8
+## > cacheSolve(a)
+##       [,1] [,2]
+##  [1,]   -4  3.5
+##  [2,]    3 -2.5
+
 
 ## It takes as input a square invertible matrix, set the values of the matrix, get the values of the matrix, 
 ## finds its inverse using function solve, set that value and cache it in the memory
